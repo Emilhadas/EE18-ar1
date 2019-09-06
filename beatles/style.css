@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Permanent+Marker&display=swap');
+body{
+    background-image: url("./bilder/patrick-tomasso-5hvn-2WW6rY-unsplash.jpg");
+    background-size: cover;
+    background-attachment: fixed
+}
+h1 {
+    color: #ffffff;
+    font-size: 75px;
+    font-family: 'Amatic SC', cursive;
+    
+    
+}
+h2 {
+    color: #ffffff;
+    font-size: 50px;
+    font-family: 'Amatic SC', cursive;
+
+}
+p{
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Amatic SC', cursive;
+    
+
+}
+a {
+    color: #ffffff;
+
+}
