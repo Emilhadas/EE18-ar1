@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Hepta+Slab|Open+Sans+Condensed:300&display=swap');
+body{
+
+}
+table{
+width: 500px;
+border-spacing: 10px;
+background-color: lightgray;
+}
+caption{
+    font-family: 'Hepta Slab', serif;
+    color: #ffffff;
+    font-size: 80px;
+    background-image: url(./bilder/dan-gold-4_jhDO54BYg-unsplash.jpg);
+    background-size: cover;
+    
+}
+tr{
+
+}
+th{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 35px;
+    background-color: lightseagreen;
+    padding: 30px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+td{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+img{
+    width: 376px;
+    border-radius: 20px;
+}

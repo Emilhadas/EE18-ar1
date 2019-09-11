@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Permanent+Marker&display=swap');
+body {
+    background-image: url(./bilder/enrapture-captivating-media-wPoFjeb1hyo-unsplash.jpg);
+}
+h1 {
+    color: #ffffff;
+    font-family: 'Amatic SC', cursive;
+    font-size: 75px
+}
+p {
+    color: #ffffff;
+    font-family: 'Amatic SC', cursive;
+    font-size: 35px
+}
+a {
+    color: #ffffff;
+    font-family: 'Amatic SC', cursive;
+    font-size: 35px
+}
