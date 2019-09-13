@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+body { 
+background: url(../bilder/pineapple-supply-co-n_CvvktBf-Q-unsplash.jpg);
+background-size: cover;
+}
+table{
+    background: #000;
+font-size: 33px;
+width: 1900px;
+}
+thead{
+color: #fff;
+font-family: 'Indie Flower', cursive;
+}
+tr {
+
+}
+th {
+}
+h1 {
+color: #fff;
+font-size: 50px;
+}
+p {
+color: #fff;
+font-size: 20px;
+}
