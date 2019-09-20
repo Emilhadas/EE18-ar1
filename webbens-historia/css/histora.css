@@ -24,4 +24,6 @@ font-size: 50px;
 p {
 color: #fff;
 font-size: 23px;
+width: 850px;
+border: #fff 5px solid;
 }
