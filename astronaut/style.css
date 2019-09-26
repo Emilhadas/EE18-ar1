@@ -1,0 +1,18 @@
+body {
+    background: url(./bilder/månen\ bild.jpg);
+    background-size: cover;
+    background-position: 0 -100px;
+}
+h1 {
+    color: #fff;
+    font: 40px sans-serif;
+    font-weight: bold;
+    margin-top: 750px;
+    margin-left: 450px;
+}
+h2 { 
+    color: rgb(197, 190, 190);
+    font: 20px sans-serif;
+    font-weight: bold;
+    margin-left: 450px;
+}
