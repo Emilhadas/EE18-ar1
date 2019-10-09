@@ -1,0 +1,105 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Mono&display=swap');
+
+/* 
+font-family: 'Roboto Mono', monospace;
+font-family: 'Oswald', sans-serif; - heading font
+*/
+
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+/* css clearfix mot box-kollaps */
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
+
+/* Utseende på sidan */
+body{
+    background-color: rgb(0, 0, 0);
+
+}
+
+.kontainer{
+    font-family: 'Roboto Mono', monospace;
+    background-color: rgb(116, 48, 48);
+    width: 1200px;
+    margin: 20px auto 20px auto;
+    border-radius: 20px;
+
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    color: #fff;
+
+}
+
+.intro{
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+/* Utseende på rutorna */
+.rutor{
+    background-color: rgb(0, 0, 0);
+    width: 1000px;
+    margin: 40px auto auto auto;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+img{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: white;
+}
+
+
+/* Utseende på sidfoten */
+
+.kalla{
+    padding: 20px;
+    margin-left: 80px;
+    font-size: 20px;
+    font-style: italic;
+
+}
+.vänster {
+float: left;
+margin-right: 20px;
+}
+.texthöger {
+    text-align: right;
+}
+.höger {
+float: right;
+margin-left: 20px;
+}
+hr {
+    clear: both;
+    visibility: hidden; 
+}
+p {
+    color: #fff;    
+}
