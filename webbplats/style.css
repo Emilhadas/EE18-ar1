@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Roboto+Condensed&display=swap');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidans färgpalett 
+$color1: rgba(17, 75, 95, 1);
+$color2: rgba(2, 128, 144, 1);
+$color3: rgba(228, 253, 225, 1);
+$color4: rgba(69, 105, 144, 1);
+$color5: rgba(244, 91, 105, 1); */
+
+/* Sidans utseende */
+body {
+background: rgba(17, 75, 95, 1);
+}
+.kontainer {
+    font-family: 'Indie Flower', cursive;
+    width: 900px;
+    margin: 0 auto;
+    padding: 50px;
+    background: rgba(228, 253, 225, 1);
+}
+.kontainer h1 {
+    font: 60px 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+/* Menyns utseende */
+.kontainer .meny {
+text-align: center;
+padding: 20px;
+
+}
+.kontainer .meny li {
+list-style-type: none;
+display: inline;
+}
+.kontainer .meny a {
+background: rgba(244, 91, 105, 1);
+padding: 7px;
+color: #000;
+text-decoration: none;
+border-radius: 5px;
+box-shadow: 5px 5px 0px white;
+width: 130px;
+display: inline-block;
+
+}
+.kontainer .meny a:hover {
+background: rgba(69, 105, 144, 1);
+}
+.kontainer .meny .aktiv {
+    background: rgba(69, 105, 144, 1);
+}
+
+/* Inehållets utseende */
+.kontainer h2 {
+font-size: 40px;
+text-align: center;
+}
+.kontainer figure {
+background: #fff;
+    padding: 30px;
+    width: 500px;
+    margin: 20px auto;
+}
+.kontainer figure img {
+width: 100%;
+}
+.kontainer figure figcaption {
+    font-weight: bold;
+
+}
+.kontainer p {
+margin: auto;
+background: #fff;
+padding: 15px;
+}
+.kontainer .sidfot {
+font-style: italic;
+}
+.kontainer .sidfot a {
+color: rgba(69, 105, 144, 1);
+text-decoration: none;
+font-weight: bold;
+}

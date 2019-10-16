@@ -1,0 +1,58 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-image: url(../bilder/grant-ritchie-x1w_Q78xNEY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+table {
+text-align: center;
+margin: auto;
+width: 1500px;
+background: #fff;
+font-size: 40px;
+border: 5px solid #000;
+margin-top: 20px;
+}
+tr {
+
+}
+td {
+
+}
+p {
+
+}
+h1 {
+
+}
+img {
+
+}
+
+/* Klasser */
+.gdpr {
+    font-size: 25px;
+    border: 4px solid#000;
+    background: #fff;
+    width: 600px;
+    margin: 90px 0px 0px 210px;
+}
+.gdpr2 {
+    font-size: 25px;
+    border: 4px solid#000;
+    background: #fff;
+    width: 600px;
+    margin: 20px 0px 0px 210px;
+}
