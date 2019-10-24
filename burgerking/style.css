@@ -13,9 +13,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 /* Sidans utseende */
-body {
-
-}
+body {}
 .kontainer {
     font-family: 'Anton', sans-serif;
     color: #682F1C;
@@ -24,25 +22,26 @@ body {
 /* Sidhuvudets utseende */
 .kontainer .sidhuvud {
     display: grid;
-grid-template-columns: 40% 65%;
+    grid-template-columns: 25% 75%;
 }
-.kontainer .sidhuvud img {
-margin-left: 170px;
+.kontainer .sidhuvud .logga {
+    margin-left: 100px;
+}
 
-}
 .kontainer .sidhuvud ul {
-margin-top: 25px;text-align: right;
-margin-right: 200px;
+    margin-top: 25px;
+    text-align: right;
+    margin-right: 200px;
 }
 .kontainer .sidhuvud li {
-display: inline;
+    display: inline;
 
 }
 .kontainer .sidhuvud li a {
-color: #682F1C;
-text-decoration: none;
-font-size: 25px;
-padding: 5px 15px;
+    color: #682F1C;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px 15px;
 }
 
 /* Innehållets utseende */
@@ -52,25 +51,23 @@ padding: 5px 15px;
     text-align: center;
 }
 .kontainer .rutnat .produkt {
-padding: 20px;
+    padding: 20px;
 }
 .kontainer .rutnat .produkt h1 {
-margin-top: 150px;
-font-size: 50px;
+    margin-top: 150px;
+    font-size: 50px;
 }
 .kontainer .rutnat .produkt h2 {
     font-family: 'Liu Jian Mao Cao', cursive;
     font-size: 40px;
 }
-.kontainer .rutnat .produkt img {
-
-}
+.kontainer .rutnat .produkt img {}
 .kontainer .rutnat .produkt p {
-
+    
 }
 .kontainer .ljus {
-background: #FEF1E5;
+    background: #FEF1E5;
 }
 .kontainer .mörk {
-background: #EFDAC5;
+    background: #EFDAC5;
 }

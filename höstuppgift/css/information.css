@@ -1,0 +1,71 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidans utseende */
+body {
+    background: url(../bilder/photo-1481819434877-23b892ca68ff.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.kontainer {
+    
+}
+
+.kontainer ul {
+    text-transform: uppercase;
+    background: #444;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    text-align: center; 
+    border: solid red 5px;
+}
+
+.kontainer ul li{
+display: inline;
+}
+.kontainer li a {
+text-decoration: none;
+color: red;
+font-size: 45px;
+padding: 80px;
+}
+
+/* Bilder */
+
+
+
+/* Text */
+
+.kontainer .maintext {
+text-align: center;
+width: 500px;
+color: red;
+font-size: 18px;
+
+}
+.kontainer .maintext .text {
+padding: 20px;
+background: black;
+margin: 
+}
+.kontainer .maintext .text1 {
+ padding: 20px;
+background: black;
+margin-top: 50px;
+}
+.kontainer .maintext .text2 {
+padding: 20px;
+background: black;
+margin-top: 50px;
+}
