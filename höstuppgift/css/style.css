@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 /* Enkel CSS-reset */
 html {
     box-sizing: border-box;
@@ -12,51 +13,78 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 
 /* Sidans utseende */
 body {
-    background: url(../bilder/photo-1481819434877-23b892ca68ff.jpg);
+    background: url(../bilder/moon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
-.kontainer {
-
-}
+/* Utseende Meny */
 
 .kontainer ul {
     text-transform: uppercase;
-    background: #444;
-    margin: 20px 0 20px 0;
-    padding: 20px;
-    text-align: center; 
+    background: black;
+    margin: 0 0 20px 0;
+    padding: 35px;
+    text-align: center;
     border: solid red 5px;
+    word-spacing: 200px;
 }
-
-.kontainer ul li{
-display: inline;
+.kontainer ul li {
+    display: inline;
 }
 .kontainer li a {
-text-decoration: none;
-color: red;
-font-size: 45px;
-padding: 80px;
+    text-decoration: none;
+    color: red;
+    font-size: 45px;
 }
-
-/* Bilder */
-
-
+.kontainer a:hover {
+    background: blue;
+    padding: 10px;
+    border-radius: 15px;
+}
+.kontainer .display {
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+}
 
 /* Text */
 
+.kontainer h1 {
+    color: black;
+    font-size: 120px;
+    margin: -440px 0 0 900px;
+}
+.kontainer h2 {
+    font-size: px;
+    color: black;
+    margin: .440px 0 0 1000px;
+}
 .kontainer .maintext {
-
-
+    color: black;
+    width: cover;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 338px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 20px;
 }
-.kontainer .maintext .text {
-
+.kontainer .maintext p {
+    color: red;
+    width: 600px;
+    margin: 20px 0 0 0px;
+    background: black;
+    padding: 40px;
+    border-radius: 0px;
+    border: solid red 5px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
-.kontainer .maintext .text1 {
 
-}
-.kontainer .maintext .text2 {
+/* bilder */
 
+.kontainer img {
+    margin-top: -20px;
+    border: solid black 20px;
+    width: 1903px;
 }
