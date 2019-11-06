@@ -1,19 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Permanent+Marker&display=swap');
-body {
-    background-image: url(./bilder/enrapture-captivating-media-wPoFjeb1hyo-unsplash.jpg);
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
 }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidans Utseende */
+
+.kontiner {
+background: black;
+}
+.kontiner ul {
+text-align: center;
+word-spacing: 50px;
+}
+.kontiner ul li{
+color: white;
+display: inline;
+font-size: 30px;
+}
+
+/* Textens Utseende */
+
 h1 {
-    color: #ffffff;
-    font-family: 'Amatic SC', cursive;
-    font-size: 75px
-}
-p {
-    color: #ffffff;
-    font-family: 'Amatic SC', cursive;
-    font-size: 35px
-}
-a {
-    color: #ffffff;
-    font-family: 'Amatic SC', cursive;
-    font-size: 35px
+    color: black;
+    font-size: 65px;
 }
