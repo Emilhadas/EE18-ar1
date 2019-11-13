@@ -47,7 +47,7 @@ body {
     padding: 40px;
 }
 .kontainer a:hover {
-    background: blue;
+    box-shadow: 5px 5px 50px white;
     padding: 10px;
     border-radius: 15px;
 }

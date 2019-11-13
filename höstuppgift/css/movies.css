@@ -55,7 +55,7 @@ body {
     margin: 65px 150px 65px 150px;
 }
 .kontainer .meny a:hover {
-    background: blue;
+    box-shadow: 5px 5px 50px white;
     padding: 10px;
     border-radius: 15px;
 }
