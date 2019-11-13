@@ -13,18 +13,18 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 /* Sidans Utseende */
 
 body {
-background: url(./bilder/bild1.jpg);
-background-size: cover;
+    background: url(./bilder/bild1.jpg);
+    background-size: cover;
 }
-.sida {
-    background: white;
-    width: 1600px;
-    margin: auto;
+.kontainer {
+
+}
+.kontainer .sidhuvud {
+    background-color: white;
     padding: 20px;
-    margin-top: 25px;
-}
-.kontiner {
-background: ;
+    margin: 45px auto;
+    width: 1800px;
+    border: solid black 3px;
 }
 
 /* Textens Utseende */
@@ -36,23 +36,27 @@ h1 {
     margin-left: 20px;
     margin-bottom: 20px;
 }
-.kontiner ul {
+.kontainer ul {
+
     text-align: center;
     word-spacing: 430px;
     padding: 10px;
     background: black;
     margin: 0 20px 0 20px;
-    }
-    .kontiner ul li{
+}
+.kontainer ul li {
     color: white;
     display: inline;
     font-size: 30px;
     text-transform: uppercase;
-    }
-    .kontiner ul li a{
-        text-decoration: none;
-        color: white;
-    }
-    .hover {
-        
-    }
+}
+.kontainer ul li a {
+    text-decoration: none;
+    color: white;
+}
+.sida {
+    background-color: white;
+    margin: 50px auto;
+    padding: 500px;
+    width: 500px;
+}
