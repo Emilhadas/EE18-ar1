@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1 id="h1">I rörelse</h1>
+        <p id="p1">Den mätta dagen, den är aldrig störst. <br>
+            Den bästa dagen är en dag av törst.</p>
+        <p id="p2">Nog finns det mål och mening i vår färd - <br>
+            men det är vägen, som är mödan värd.</p>
+
+        <img id="img" src="../bilder/flame.jpg" alt="Eld">
+
+        <button id="b1" onclick="mörkt()">Mörkt läge</button>
+        <button id="b2" onclick="ljust()">Ljust läge</button>
+    </div>
+    <script>
+/* Mörkt Tema */
+        function mörkt() {
+            const elementBody = document.querySelector("body")
+            const elementBox = document.querySelector(".kontainer")
+            const elementH1 = document.querySelector("h1")
+            const elementP1 = document.querySelector("#p1")
+            const elementP2 = document.querySelector("#p2")
+            const elementKnapp1 = document.querySelector("#b1")
+            const elementKnapp2 = document.querySelector("#b2")
+            const elementImg = document.querySelector("img")
+
+            // Utessende på Body och Kontainer
+            elementBox.style.backgroundColor = "black";
+            elementBody.style.backgroundColor = "black"
+           // Text utseende
+            elementH1.style.color = "white"
+            elementP1.style.color = "white";
+            elementP2.style.color = "white";
+            elementP1.style.backgroundColor = "black"
+            elementP2.style.backgroundColor = "black"
+          // Knapp utseende
+            elementKnapp1.style.color = "white"
+            elementKnapp2.style.color = "white"
+            elementKnapp1.style.backgroundColor = "purple"
+            elementKnapp2.style.backgroundColor = "purple"
+           // Bild utseende
+            elementImg.style.backgroundColor = "black"
+        }  
+/* Ljust Tema */
+        function ljust() {
+            const elementBody = document.querySelector("body")
+            const elementBox = document.querySelector(".kontainer")
+            const elementH1 = document.querySelector("h1")
+            const elementP1 = document.querySelector("#p1")
+            const elementP2 = document.querySelector("#p2")
+            const elementKnapp1 = document.querySelector("#b1")
+            const elementKnapp2 = document.querySelector("#b1")
+
+            // Utessende på Body och Kontainer
+            elementBox.style.backgroundColor = "white";
+            elementBody.style.backgroundColor = "white"
+           // Text utseende
+            elementH1.style.color = "black"
+            elementP1.style.color = "black";
+            elementP2.style.color = "black";
+            elementP1.style.backgroundColor = "white"
+            elementP2.style.backgroundColor = "white"
+           // Knapp utseende
+            elementKnapp1.style.color = "white"
+            elementKnapp2.style.color = "white"
+            elementKnapp1.style.backgroundColor = "green"
+            elementKnapp2.style.backgroundColor = "green"
+           // Bild utseende
+            elementImg.style.backgroundColor = "white"
+        }      
+    </script>
+</body>
+</html>
