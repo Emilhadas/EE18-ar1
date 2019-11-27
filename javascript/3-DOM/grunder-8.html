@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer kol3">
+            <img id="bild1" src="./foton/bild1.jpg" alt="Hjul">
+            <img id="bild2" src="./foton/bild2.jpg" alt="Löv">
+            <img id="bild3" src="./foton/bild3.jpg" alt="Bil">
+
+            <button onclick="blink1()">Svartvit</button>
+            <button onclick="suddig()">Suddig</button>
+            <button onclick="contrast()">Kontrast</button>
+        </div>
+    <script>
+        // element vi skall arbeta med
+        const elementBild1 = document.querySelector("#bild1");
+        const elementBild2 = document.querySelector("#bild2");
+        const elementBild3 = document.querySelector("#bild3");
+
+        function blink1() {
+            setInterval(svartVit, 500)
+        }
+        function suddig() {
+            elementBild1.classList.toggle("suddig")
+            elementBild2.classList.toggle("suddig")
+            elementBild3.classList.toggle("suddig")
+        }
+        function contrast() {
+            elementBild1.classList.toggle("contrast")
+            elementBild2.classList.toggle("contrast")
+            elementBild3.classList.toggle("contrast")
+        }
+        function svartVit() {
+            elementBild1.classList.toggle("gråskala")
+            elementBild2.classList.toggle("gråskala")
+            elementBild3.classList.toggle("gråskala")
+        }
+    </script>
+</body>
+</html>
