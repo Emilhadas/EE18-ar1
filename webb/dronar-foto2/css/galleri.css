@@ -14,7 +14,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 /* Sidans Utseende */
 
 body {
-    background: url(./bilder/bild1.jpg);
+    background: white;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -50,12 +50,9 @@ height: 100%;
 display: table-cell;
 vertical-align: middle;
 font-size: 35px;
-font-weight: 200;
+font-weight: 800;
+}
 
-}
-.logo h1 span {
-    font-weight: 800;
-}
 .navigation {
     float: right;
     height: 100%;

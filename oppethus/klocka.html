@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ÖppetHus</h1>
+    <script>
+        const elementH1 = document.querySelector("h1");
+        setInterval(klocka, 1000);
+
+        function klocka() {
+            var tid = new Date();
+            var sec = tid.getSeconds();
+            console.log(sec);
+            elementH1.textContent = sec;
+        }
+    </script>
+</body>
+</html>

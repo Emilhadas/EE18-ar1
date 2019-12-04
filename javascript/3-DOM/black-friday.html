@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Black Friday</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<body>
+<div class="kontainer">
+    <h1>Black Friday</h1>
+    <p>Sidan med uppdatering på dagens deals!</p>
+    <p>Kolla sidan varje dag för nya erbjudanden</p>
+    <img src="./foton/black-friday.png" alt="">
+    <img class="animated" id="img1" hidden src="./foton/deals.jpg" alt="Bild">
+
+    <button onclick="visaBild()">Ladda mer</button>
+    <button onclick="döljBild()">Ta bort</button>
+    
+</div>
+
+    <script>
+        function visaBild() {
+            // Element
+            const elementImg = document.querySelector("#img1");
+            
+            // Göra bild synlig
+            elementImg.hidden = false;
+            elementImg.classList.add("fadeInDown");
+        }
+        function döljBild() {
+            // Element
+            const elementImg = document.querySelector("#img1");
+            
+            // Ta bort bild
+            elementImg.hidden = true;
+            elementImg.classList.add("fadeinOutDown");
+            
+        }
+    </script>
+</body>
+</html>
