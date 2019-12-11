@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Infoga text i sidan</h1>
+        <p id="mobil">Hemligt mobilnummer</p>
+        <p id="adress">Hemlig adress</p>
+        <div id="avatar">Hemlig avatarbild</div>
+        <button onmousedown="visaNr()" onmouseup="döljNr()">Visa mobilnummer</button>
+        <button onmousedown="visaAdress()" onmouseup="döljAdress()">Visa hemlig adress</button>
+        <button onclick="visaAvatar()">Visa avatarbilden</button>
+    </div>
+    <script>
+        // element vi skall arbeta med
+        const elementP1 = document.querySelector("#mobil");
+        const elementP2 = document.querySelector("#adress");
+        const elementAvatar = document.querySelector("#avatar");
+
+        // Visa och dölj nummer
+        function visaNr() {
+            elementP1.textContent = "0704993127";
+        }
+        function döljNr() {
+            elementP1.textContent = "Hemligt mobilnummer";
+        }
+
+        // Visa och dölja adress
+        function visaAdress() {
+            elementP2.textContent = "Crafordsväg 10";
+        }
+        function döljAdress() {
+            elementP2.textContent = "Hemlig adress";
+        }
+
+        // Visa avatar bild
+        function visaAvatar() {
+            elementAvatar.innerHTML = "<img src=\"./foton/avatar.jpg\" alt=\"Avatar\">";
+        }
+    </script>
+</body>
+</html>

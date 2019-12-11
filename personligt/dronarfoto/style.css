@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baskervville&display=swap');
 /* Enkel CSS-reset */
 html {
     box-sizing: border-box;
@@ -14,18 +15,38 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 /* Sidans Utseende */
 
 body {
-    background: url(./bilder/bild1.jpg);
+    background: white;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 2500px;
+}
+.main {
+    background: url(./bilder/bild1-size.jpg);
+    background-repeat: no-repeat;
+    width: 1600px;
+    height: 800px;
+    background-position: center;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.minibox {
+    background: white;
+    width: 700px;
+    margin-top: 480px;
+    margin-left: 840px;
+    height: 250px;
+    font-family: 'Baskervville', serif;
+    text-align: center;
 }
 .kontainer {
 
 }
 .kontainer .sidhuvud {
-background-color: #101010;
-width: 100%;
-height: 80px;
-display: block;
+    background-color: #101010;
+    width: 100%;
+    height: 80px;
+    display: block;
+    /* position: fixed; */
 
 }
 .kontainer .innre-sidhuvud {
@@ -33,11 +54,18 @@ display: block;
     height: 100%;
     display: block;
     margin: 0 auto;
-    
+
 }
 
 /* Textens Utseende */
 
+.rubrik {
+    font-size: 80px;
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Baskervville', serif;
+    
+}
 .logo {
     height: 100%;
     display: table;
@@ -45,12 +73,12 @@ display: block;
     font-family: 'Montserrat', sans-serif;
 }
 .logo h1 {
-color: white;
-height: 100%;
-display: table-cell;
-vertical-align: middle;
-font-size: 35px;
-font-weight: 200;
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 35px;
+    font-weight: 200;
 
 }
 .logo h1 span {
@@ -60,7 +88,7 @@ font-weight: 200;
     float: right;
     height: 100%;
     color: white;
-    
+
 }
 .navigation a {
     height: 100%;
@@ -81,14 +109,15 @@ font-weight: 200;
 
 
 
-@media screen and (max-width:1024px){
-    .navigations  {
+
+@media screen and (max-width:1024px) {
+    .navigations {
         width: 60%;
     }
 }
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
     .navigation {
         position: absolute;
         right: 0px;

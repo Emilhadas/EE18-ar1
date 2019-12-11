@@ -1,0 +1,133 @@
+/*// BASE STYLES //*/
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+body {}
+
+.grass, .sky, .road, .snow {
+    position: absolute;
+}
+.snow {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.sky {
+    top: 0;
+    height: 40%;
+    background: lightblue;
+    width: 100%;
+}
+.sky2 {
+    
+}
+
+.grass {
+    top: 300px;
+    height: 30%;
+    background: white;
+    width: 100%;
+}
+
+.road {
+    top: 675px;
+    height: 30%;
+    background: dimgrey;
+    box-sizing: border-box;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+    width: 100%;
+}
+
+.lines {
+    box-sizing: border-box;
+    border: 5px dashed #fff;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+
+/*// ELEMENTS TO ANIMATE //*/
+
+.mario-gemensamt {
+    position: absolute;
+    animation-name: drive;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+#mario {
+    top: -20px;
+    left: 0px;
+    animation-duration: 2s;
+}
+#mario2 {
+    top: 145px;
+    left: 0px;
+    animation-duration: 3s;
+}
+.moln-gemensamt {
+    position: absolute;
+    animation-name: moln;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+#moln {
+    top: -605px;
+    left: -800px;
+    animation-duration: 110s;
+    width: 250px;
+}
+#moln2 {
+    top: -550px;
+    left: -2600px;
+    animation-duration: 130s;
+    width: 320px;
+}
+#moln3 {
+    top: -600px;
+    left: -300px;
+    animation-duration: 120s;
+    width: 400px;
+}
+#moln4 {
+    top: -700px;
+    left: -1000px;
+    animation-duration: 120s;
+    width: 400px;
+}
+.sol {
+    position: absolute;
+    top: -670px;
+    left: 100px;
+    animation-name: moln;
+    animation-duration: 450s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    width: 150px;
+}
+
+/*// KEYFRAMES //*/
+
+@keyframes drive {
+    from {
+        transform: translateX(-150px);
+    }
+    to {
+        transform: translateX(2000px);
+    }
+}
+@keyframes moln {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(3800px);
+    }
+}

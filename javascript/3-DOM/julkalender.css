@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url(./foton/julkalender-bild.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Pacifico', cursive;
+    color: white;
+}
+/* Knep för att få sidan i mitten av webbläsarfönstre */
+html, body {
+    height: 100%;
+}
+.mitten {
+height: 100%;
+display: flex;
+align-items: center;
+justify-items: center;
+}
+.kontainer {
+    background: red;
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    padding: 50px;
+    border: solid 5px white;
+    margin-bottom: 100px;
+}
+h1 {
+    font-size: 80px;
+    margin-bottom: 60px;
+}
+.kalender {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.ruta {
+    font-size: 60px;
+    background: green;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    border: solid 2px white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.ruta:hover {
+    background: darkgreen;
+    box-shadow: 0 0 100px white;
+}
+.klapp1 {
+    font-size: 0;
+    border: none;
+    background: url(./foton/julklapp1.png) center;
+    background-size: cover;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.klapp2 {
+    font-size: 0;
+    border: none;
+    background: url(./foton/tomte.png) center;
+    background-size: cover;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.klapp3 {
+    color: red;
+    font-size: 30px;
+    padding: 10px;
+    background: rgb(206, 219, 219);
+    animation: tona 2s;
+    pointer-events: none; 
+    text-align: center;
+      
+}
+.klapp4 {
+    font-size: 0;
+    border: none;
+    background: url(./foton/tomte.png) center;
+    background-size: cover;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.klapp5 {
+    font-size: 0;
+    border: none;
+    background: url(./foton/tomte.png) center;
+    background-size: cover;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.klapp6 {
+    font-size: 0;
+    border: none;
+    background: url(./foton/tomte.png) center;
+    background-size: cover;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.klapp7 {
+    font-size: 0;
+    border: none;
+    background: url(./foton/tomte.png) center;
+    background-size: cover;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.klapp8 {
+    color: red;
+    font-size: 30px;
+    padding: 10px;
+    background: rgb(206, 219, 219);
+    animation: tona 2s;
+    pointer-events: none; 
+    text-align: center;
+}
+.klapp9 {
+    font-size: 0;
+    border: none;
+    background: url(./foton/tomte.png) center;
+    background-size: cover;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.klapp10 {
+    font-size: 0;
+    border: none;
+    background: url(./foton/tomte.png) center;
+    background-size: cover;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.klapp11 {
+    font-size: 0;
+    border: none;
+    background: url(./foton/tomte.png) center;
+    background-size: cover;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.klapp12 {
+    font-size: 0;
+    border: none;
+    background: url(./foton/tomte.png) center;
+    background-size: cover;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.klapp13 {
+    color: red;
+    font-size: 30px;
+    padding: 10px;
+    background: rgb(206, 219, 219);
+    animation: tona 2s;
+    pointer-events: none; 
+    text-align: center;
+}
+.klapp14 {
+    font-size: 0;
+    border: none;
+    background: url(./foton/tomte.png) center;
+    background-size: cover;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.klapp15 {
+    font-size: 0;
+    border: none;
+    background: url(./foton/tomte.png) center;
+    background-size: cover;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.klapp16 {
+    font-size: 0;
+    border: none;
+    background: url(./foton/tomte.png) center;
+    background-size: cover;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.klapp17 {
+    font-size: 0;
+    border: none;
+    background: url(./foton/tomte.png) center;
+    background-size: cover;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.klapp18 {
+    color: red;
+    font-size: 30px;
+    padding: 10px;
+    background: rgb(206, 219, 219);
+    animation: tona 2s;
+    pointer-events: none; 
+    text-align: center;
+}
+.klapp19 {
+    font-size: 0;
+    border: none;
+    background: url(./foton/tomte.png) center;
+    background-size: cover;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.klapp20 {
+    font-size: 0;
+    border: none;
+    background: url(./foton/tomte.png) center;
+    background-size: cover;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.klapp21 {
+    font-size: 0;
+    border: none;
+    background: url(./foton/tomte.png) center;
+    background-size: cover;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.klapp22 {
+    font-size: 0;
+    border: none;
+    background: url(./foton/tomte.png) center;
+    background-size: cover;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.klapp23 {
+    color: red;
+    font-size: 30px;
+    padding: 10px;
+    background: rgb(206, 219, 219);
+    animation: tona 2s;
+    pointer-events: none; 
+    text-align: center;
+}
+.klapp24 {
+    font-size: 0;
+    border: none;
+    background: url(./foton/tomte.png) center;
+    background-size: cover;
+    animation: tona 5s;
+    pointer-events: none;
+}
+@keyframes tona {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
