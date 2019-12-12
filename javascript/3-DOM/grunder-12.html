@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <button onclick="visaCatgif()">Tryck inte!</button>
+        
+    </div>
+    <script>
+        // element vi skall arbeta med
+        const elementBox = document.querySelector("div")
+
+        function visaCatgif() {
+            elementBox.innerHTML = "<h1> Lol cats" +
+                                    "<img src=\"./foton/catgif.gif\" alt=\"cat\">";
+            
+        }
+
+    </script>
+</body>
+</html>

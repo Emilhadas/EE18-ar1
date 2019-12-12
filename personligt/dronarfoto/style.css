@@ -20,33 +20,25 @@ body {
     background-repeat: no-repeat;
     height: 2500px;
 }
+.kontainer {
+}
 .main {
     background: url(./bilder/bild1-size.jpg);
-    background-repeat: no-repeat;
-    width: 1600px;
-    height: 800px;
-    background-position: center;
-    margin: 0 auto;
-    margin-top: 60px;
-}
-.minibox {
-    background: white;
-    width: 700px;
-    margin-top: 480px;
-    margin-left: 840px;
-    height: 250px;
-    font-family: 'Baskervville', serif;
-    text-align: center;
-}
-.kontainer {
+    background-repeat: no-repeat;   
+    width: 100%;
+    height: 1080px;
+    background-position: 0 50px;
 
 }
+
+    /* Utessende för sidhuvud */
+
 .kontainer .sidhuvud {
     background-color: #101010;
     width: 100%;
-    height: 80px;
+    height: 100px;
     display: block;
-    /* position: fixed; */
+    position: fixed;
 
 }
 .kontainer .innre-sidhuvud {
@@ -54,23 +46,6 @@ body {
     height: 100%;
     display: block;
     margin: 0 auto;
-
-}
-
-/* Textens Utseende */
-
-.rubrik {
-    font-size: 80px;
-    text-align: center;
-    margin-top: 60px;
-    font-family: 'Baskervville', serif;
-    
-}
-.logo {
-    height: 100%;
-    display: table;
-    float: left;
-    font-family: 'Montserrat', sans-serif;
 }
 .logo h1 {
     color: white;
@@ -104,6 +79,42 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
 }
+.info h1 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+.info {
+    background: black;
+    width: 100%;
+    height: 650px;
+    
+}
+.info img {
+    width: 630px;
+    padding: 70px;
+}
+
+/* Textens Utseende */
+
+.rubrik {
+    text-align: center;
+    padding: 250px;
+    color: white;
+    font-size: 100px;
+    font-family: 'Baskervville', serif;
+    text-shadow: 4px 4px 4px black;
+    margin-left: -300px;
+    
+}
+.logo {
+    height: 100%;
+    display: table;
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 
 
