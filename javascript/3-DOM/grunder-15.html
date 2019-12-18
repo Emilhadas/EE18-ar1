@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Gisa ett tal</h1>
+
+        <h2>Input</h2>
+        <label>Gissa ett tal 1-10</label>
+        <input type="text">
+        <button onclick="läsaTal()">Skicka</button>
+
+        <h2>Output</h2>
+        <p>Resultat</p>
+
+    </div>
+    <script>
+        // element vi skall arbeta med
+        const elementInput = document.querySelector("input")
+        const elementResultat = document.querySelector("p");
+
+        // Slumpa fram ett tal
+        var slumptal = Math.ceil(Math.random() * 10);
+        console.log(slumptal);
+        
+        // Är gissningen = slumptalet
+        var gissning = elementInput.value
+        function läsaTal() {
+            if (gissning == slumptal) {
+            // Rätt svar
+                elementResultat.textContent = ("Rätt Svar");
+            } else {
+                // Fel svar
+                elementResultat.textContent = ("Du gissade fel");
+            }
+        }
+    </script>
+</body>
+</html>
