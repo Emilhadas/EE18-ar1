@@ -142,3 +142,6 @@ filter: invert(75%);
     font-size: 48px;
     color: red;
 }
+.kontainer textarea {
+    resize: none;
+}
