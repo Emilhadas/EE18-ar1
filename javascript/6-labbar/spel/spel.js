@@ -18,7 +18,7 @@ var slumptal,
 poäng = 0,
 varv = 10;
 
-const elementKontainer = document.querySelector(".kontainer")
+const elementKontainer = document.querySelector(".okontainer")
 const elementFrågeRuta = document.querySelector("textarea");
 const elementÅrtalRuta = document.querySelector("#årtal");
 const elementKnappSkicka = document.querySelector("#skicka");
