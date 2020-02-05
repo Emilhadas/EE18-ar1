@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hotellbokning</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="bokning.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Rumsbokning</h1>
+        <fieldset>
+            <legend>Val av rum</legend>
+            <input type="radio" name="rum" id="enkel" value="500" checked>
+            <label for="enkel">Enkelrum 500kr</label><br>
+            <input type="radio" name="rum" id="dubbel" value="800">
+            <label for="dubbel">Dubbelrum 800kr</label><br>
+            <input type="radio" name="rum" id="familje" value="1200">
+            <label for="familje">Familjerum 1200kr</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Antal nätter</legend>
+            <select class="form-control form-control-sm">
+                <option value="">1 Natt</option>
+                <option value="">2 Nätter</option>
+                <option value="">3 Nätter</option>
+                <option value="">4 Nätter</option>
+                <option value="">5 Nätter</option>
+                <option value="">6 Nätter</option>
+                <option value="">1 Vecka</option>
+                <option value="">2 Veckor</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Extra tillägg</legend>
+            <input type="checkbox" name="tillägg" id="wifi" value="50">
+            <label for="wifi">Wifi 50kr</label><br>
+            <input type="checkbox" name="tillägg" id="frukost" value="100" checked>
+            <label for="frukost">Frukost 100kr - per person</label><br>
+            <input type="checkbox" name="tillägg" id="tv" value="250">
+            <label for="tv">Större tv 250kr</label>
+        </fieldset>
+        <fieldset>
+            <legend>Kampanjkod</legend>
+            Om du har en kampanjkod, mata in den här. <br>
+            <input class="form-control" type="text" name="" id="kampanjkod">
+        </fieldset>
+        <fieldset>
+            <legend>Summa</legend>
+            <p>Kostnad på dina val blev 0 kr.</p>
+            <button class="btn btn-outline-primary">Beräkna kostnad</button>
+        </fieldset>
+        <button id="button" class="btn btn-outline-success">Betala</button>
+    </div>
+
+
+
+
+
+    <script defer src="./bokning.js"></script>
+</body>
+</html>

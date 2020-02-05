@@ -2,48 +2,111 @@
 const elementFönster = document.querySelector("#fönster");
 const elementKol4 = document.querySelector(".kol4");
 
-elementKol4.addEventListener("click", tryck);
-function tryck(event) {
+// Blobala variabler
+var minneA = "",
+    minneB = ""
+resultat = 0, operator = "";
 
+elementKol4.addEventListener("click", tryck);
+
+function tryck(event) {
     if (event.target.tagName == "BUTTON") {
         console.log(event.target.textContent)
 
-        switch (event.target.textContent) {
-            case "0":
-                elementFönster.value = event.target.textContent;
+        // Vilken knapp vi trycker på
+        var knapp = event.target;
+
+        // Gör olika saker beroende på kanpp
+
+        switch (knapp.dataset.meta) {
+            case "tal":
+                // Lagra talet i minnet
+                minneA += knapp.textContent;
+                // Skriv ut i fönstret
+                elementFönster.value += knapp.textContent;
                 break;
-            case "1":
-                elementFönster.value = event.target.textContent;
+
+            case "+":
+                // Rensar textfältet
+                elementFönster.value = "";
+                // flytta över talet till minne B
+                minneB = minneA;
+                // Rensar minne A
+                minneA = "";
+                operator = "+";
                 break;
-            case "2":
-                elementFönster.value = event.target.textContent;
+
+            case "-":
+                // Rensar textfältet
+                elementFönster.value = "";
+                // flytta över talet till minne B
+                minneB = minneA;
+                // Rensar minne A
+                minneA = "";
+                operator = "-";
                 break;
-            case "3":
-                elementFönster.value = event.target.textContent;
+            case "*":
+                // Rensar textfältet
+                elementFönster.value = "";
+                // flytta över talet till minne B
+                minneB = minneA;
+                // Rensar minne A
+                minneA = "";
+                operator = "*";
                 break;
-            case "4":
-                elementFönster.value = event.target.textContent;
+            case "/":
+                // Rensar textfältet
+                elementFönster.value = "";
+                // flytta över talet till minne B
+                minneB = minneA;
+                // Rensar minne A
+                minneA = "";
+                operator = "/";
                 break;
-            case "5":
-                elementFönster.value = event.target.textContent;
+
+            case "C":
+                elementFönster.value = "";
+                minneA = "";
+                minneB = "";
                 break;
-            case "6":
-                elementFönster.value = event.target.textContent;
-                break;
-            case "7":
-                elementFönster.value = event.target.textContent;
-                break;
-            case "8":
-                elementFönster.value = event.target.textContent;
-                break;
-            case "9":
-                elementFönster.value = event.target.textContent;
-                break;
-        
-            default:
-                break;
+
+                // Summera som tal
+            case "=":
+                switch (operator) {
+                    case "+":
+                        resultat = Number(minneA) + Number(minneB);
+                        elementFönster.value = resultat;
+                        break;
+
+                    case "-":
+                        resultat = Number(minneB) - Number(minneA);
+                        elementFönster.value = resultat;
+                        break;
+
+                    case "*":
+                        resultat = Number(minneA) * Number(minneB);
+                        elementFönster.value = resultat;
+                        break;
+
+                    case "/":
+                        resultat = Number(minneA) / Number(minneB);
+                        elementFönster.value = resultat;
+                        break;
+
+
+
+                    default:
+                        break;
+                }
+
+
+
+                default:
+                    break;
         }
 
-        //elementFönster.value = event.target.textContent;
+        console.log("minneA=", minneA, "minneB=", minneB);
+        console.log("resultat=", resultat);
+
     }
 }
