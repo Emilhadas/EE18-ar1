@@ -59,5 +59,3 @@ function räknaUt() {
 
 
 // Räkna ut kostnaden
-
-
