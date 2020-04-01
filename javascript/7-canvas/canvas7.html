@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        //Element vi jobbar med
+        const eCanvas = document.querySelector("canvas");
+
+        //Ställ in bredd och höjd på canvas
+        eCanvas.width = 1300;
+        eCanvas.height = 1000;
+
+        //Aktivera ritmotorn
+        var ctx = eCanvas.getContext("2d");
+
+        // Fyllnadsfärg
+        ctx.fillStyle = "pink";
+        ctx.font = "35px sans-serif"
+
+
+        // Slumpa fram ett tal 0.00000 - 0.999999
+        var x = Math.random();
+        console.log(x);
+        // Slumtal 1-10
+        var y = Math.random() * 10;
+        console.log(y);
+        // Slumptal 1-10
+        var i = Math.ceil(Math.random() * 10);
+        console.log(i);
+        // Slumpa fram en fyrkant någonstans på canvas
+        var x = Math.ceil(Math.random() * 800);
+        var y = Math.ceil(Math.random() * 600);
+        ctx.fillRect(x, y, 50, 50)
+
+        ctx.clearRect(0, 0, 1300, 1000);
+
+        // Slumpa fram 10 fyrkanter någonstan på canvas
+        ctx.fillStyle = "#ff99db50"
+        for (var i = 1; i <= 100; i++) {
+            var x = Math.ceil(Math.random() * 1300);
+            var y = Math.ceil(Math.random() * 1000);
+            ctx.fillRect(x, y, 50, 50,)
+            
+        }
+
+        // Skapa en natthimmel
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, 1300, 1000);
+        ctx.filStyle = "white";
+        for (var i = 0; 1 <= 100; i++) {
+            var x = Math.ceil(Math.random() * 1300);
+            var y = Math.ceil(Math.random() * 1000);
+            var w = Math.ceil(Math.random() * 10);
+            ctx.fillRect(x, y, w, w);
+        }
+        
+        
+        
+
+
+    </script>
+</body>
+</html>
