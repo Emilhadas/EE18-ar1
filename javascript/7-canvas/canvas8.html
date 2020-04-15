@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <div class="kol2">
+        <canvas></canvas>
+        <div>
+            <h1>Flytta Mario</h1>
+            <div class="kol3">
+                <br><button id="up">&UpArrow;</button><br>
+                <button id="left">&LeftArrow;</button><br><button id="right">&rightarrow;</button>
+                <br><button id="down">&downarrow;</button><br>
+            </div>
+        </div>
+    </div>
+    <script>
+        //Element vi jobbar med
+        const eCanvas = document.querySelector("canvas");
+        const eUp = document.querySelector("#up");
+        const eLeft = document.querySelector("#left");
+        const eRight = document.querySelector("#right");
+        const eDown = document.querySelector("#down");
+        //Ställ in bredd och höjd på canvas
+        eCanvas.width = 1300;
+        eCanvas.height = 1000;
+        var ctx = eCanvas.getContext("2d")
+
+        // Ladda in bilden
+        var mario = new Image();
+        mario.src = "./mario.png";
+
+        // Kicka igång animationsloopen
+        loopen();
+
+        /* **************** */
+        // Funktioner
+        /* **************** */
+        
+        // Rita ut bilden
+        var x = 100, y = 100;
+        function ritaMario() {
+            
+            console.log("x= ", x);
+            
+
+            ctx.drawImage(mario, x, y);
+        }
+        // Animationsloopen
+        function loopen() {
+            // Sudda ut hela canvas
+            ctx.clearRect(0, 0, 1200, 1000);
+
+            // Rita ut mario
+            ritaMario();
+
+            requestAnimationFrame(loopen);
+        }
+
+        // Lyssna på input
+        eRight.addEventListener("click", function() {
+            // Öka med 3
+            x += 100;
+        })
+        eLeft.addEventListener("click", function() {
+            // Öka med 3
+            x -= 100;
+        })
+        eUp.addEventListener("click", function() {
+            // Öka med 3
+            y -= 100;
+        })
+        eDown.addEventListener("click", function() {
+            // Öka med 3
+            y += 100;
+        })
+       
+
+
+    </script>
+</body>
+</html>
