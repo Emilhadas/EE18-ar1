@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./pikachu.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        /* ****************************** */
+        /*        Ställ in canvas         */
+        /* ****************************** */
+        const eCanvas = document.querySelector("canvas");
+        eCanvas.width = 1200;
+        eCanvas.height = 1000;
+        var ctx = eCanvas.getContext("2d");
+
+        /* ****************************** */
+        /*      Variabler och Objekt      */
+        /* ****************************** */
+        // Rosa fyrkant
+        var figurX = Math.random() * 1200;
+        var figurY = -100;
+
+        // Pikachu figuren
+        var avatar = {
+            x: Math.random() * 1100,
+            y: -100,
+            bild: new Image()
+        }
+        var chewbacca = {
+            x: Math.random() * 1100,
+            y: -150,
+            bild: new Image()
+        }
+        var monster = {
+            x: Math.random() * 1100,
+            y: -200,
+            bild: new Image()
+        }
+        var cheburashka = {
+            x: Math.random() * 1100,
+            y: -150,
+            bild: new Image()
+        }
+        var vader = {
+            x: Math.random() * 1100,
+            y: -100,
+            bild: new Image()
+        }
+        var finn = {
+            x: Math.random() * 1100,
+            y: -200,
+            bild: new Image()
+        }
+        var herbie = {
+            x: Math.random() * 1100,
+            y: -150,
+            bild: new Image()
+        }
+        var mario = {
+            x: Math.random() * 1100,
+            y: -100,
+            bild: new Image()
+        }
+        var smurf = {
+            x: Math.random() * 1100,
+            y: -200,
+            bild: new Image()
+        }
+        var sonic = {
+            x: Math.random() * 1100,
+            y: -150,
+            bild: new Image()
+        }
+        var hero = {
+            x: Math.random() * 1100,
+            y: 50,
+            bild: new Image()
+        }
+
+        /* Ladda in bilderna */
+        avatar.bild.src = "./ikoner/icons8-avatar-50.png"
+        chewbacca.bild.src = "./ikoner/icons8-chewbacca-50.png"
+        monster.bild.src = "./ikoner/icons8-cookie-monster-50.png"
+        monster.bild.src = "./ikoner/icons8-cheburashka-50.png"
+        vader.bild.src = "./ikoner/icons8-darth-vader-50.png"
+        finn.bild.src = "./ikoner/icons8-finn-50.png"
+        herbie.bild.src = "./ikoner/icons8-herbie-50.png"
+        mario.bild.src = "./ikoner/icons8-super-mario-50.png"
+        mario.bild.src = "./ikoner/icons8-smurf-50.png"
+        mario.bild.src = "./ikoner/icons8-sonic-the-hedgehog-50.png"
+        hero.bild.src = "./ikoner/icons8-super-hero-male-100.png"
+        /* ****************************** */
+        /*            Funktioner          */
+        /* ****************************** */
+        function ritaFigur(x, y) {
+            ctx.fillStyle = "pink";
+            ctx.fillRect(x, y, 50, 50);
+        }
+        function ritaAvatar() {
+            ctx.drawImage(avatar.bild, avatar.x, avatar.y);
+        }
+        function ritaChewbacca() {
+            ctx.drawImage(chewbacca.bild, chewbacca.x, chewbacca.y);
+        }
+        function ritaMonster() {
+            ctx.drawImage(monster.bild, monster.x, monster.y);
+        }
+        function ritaCheburashka() {
+            ctx.drawImage(cheburashka.bild, cheburashka.x, cheburashka.y);
+        }
+        function ritaVader() {
+            ctx.drawImage(vader.bild, vader.x, vader.y);
+        }
+        function ritaFinn() {
+            ctx.drawImage(finn.bild, finn.x, finn.y);
+        }
+        function ritaHerbie() {
+            ctx.drawImage(herbie.bild, herbie.x, herbie.y);
+        }
+        function ritaMario() {
+            ctx.drawImage(mario.bild, mario.x, mario.y);
+        }
+        function ritaSmurf() {
+            ctx.drawImage(smurf.bild, smurf.x, smurf.y);
+        }
+        function ritaSonic() {
+            ctx.drawImage(sonic.bild, sonic.x, sonic.y);
+        }
+        function ritaHero() {
+            ctx.drawImage(hero.bild, hero.x, hero.y);
+        }
+        
+        
+        /* Animationsloopen */
+        function loopen() {
+            // Sudda ut canvas
+            ctx.clearRect(0, 0, 1200, 1000);
+
+            // Ökar värdet på x
+            
+            avatar.y += 2;
+            ritaAvatar();
+
+            chewbacca.y += 4;
+            ritaChewbacca();
+            
+            monster.y += 2;
+            ritaMonster();
+
+            cheburashka.y += 3;
+            ritaCheburashka();
+
+            vader.y += 2;
+            ritaVader();
+
+            finn.y += 3;
+            ritaFinn();
+
+            herbie.y += 2;
+            ritaHerbie();
+
+            mario.y += 4;
+            ritaMario();
+
+            smurf.y += 3;
+            ritaSmurf();
+
+            sonic.y += 3;
+            ritaSonic();
+
+            hero.y = 0;
+            ritaHero();
+            
+
+
+            requestAnimationFrame(loopen);
+        }
+
+        /* ****************************** */
+        /*     Starta animationsloopen    */
+        /* ****************************** */
+        loopen();
+    </script>
+</body>
+</html>
