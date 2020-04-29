@@ -15,13 +15,19 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 /* Sidans Utseende */
 
 body {
-    background: lightgray;
+    /* background: url(../bilder/bild.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 1080;
 }
 .kontainer {
+    
 }
-
+.test{
+    background: url(../bilder/bild1.jpg);
+    filter: blur(2px);
+}
     /* Utessende för sidhuvud */
 
 .kontainer .sidhuvud {

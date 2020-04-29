@@ -24,16 +24,46 @@
 
     
     <div class="main">
+        <img class="main" name="test">
             <h1 class="rubrik">Drones are our passion</h1>
+            
     </div>
-        <div class="info">
+<!--         <div class="info">
             <h1>Picture Gallery</h1>
             <div class="bilder">
                 <a href="./html/galleri.html"><img src="./bilder/bild1.jpg" alt="foto"></a>
                 <a href="./html/galleri.html"><img src="./bilder/bild1.jpg" alt="foto"></a>
                 <a href="./html/galleri.html"><img src="./bilder/bild5.jpg" alt="foto"></a>
             </div>
-        </div>
+        </div> -->
 </div>
+<script>
+	var i = 0; // Start point
+	var images = [];
+	var time = 5000;
+
+	// Image List
+	images[0] = './bilder/bild1.jpg';
+	images[1] = './bilder/bild4.jpg';
+	images[2] = './bilder/bild5.jpg';
+	images[3] = './bilder/bild1.jpg';
+
+	// Change Image
+	function changeImg(){
+		document.test.src = images[i];
+
+		if(i < images.length - 1){
+			i++;
+		} else {
+			i = 0;
+		}
+
+		setTimeout("changeImg()", time);
+	}
+
+	window.onload = changeImg;
+
+</script>
+
 </body>
 </html>
