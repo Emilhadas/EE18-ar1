@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="sida1">
+        <ul>
+            <li class="scrollElement" data-rate="-1" data-orientation="v">Par</li>
+            <li>al</li>
+            <li class="scrollElement" data-rate="-2" data-orientation="h">lax</li>
+        </ul>
+        <span class="scrollElement" data-rate="2"></span>
+    </div>
+    <div class="sida">
+        <img src="./bilder/casey-horner-4rDCa5hBlCs-unsplash.jpg" alt="Skog">
+    </div>
+    <script>
+        // Element vi använder
+        const eTargets = document.querySelectorAll(".scrollElement");
+
+        // Lyssna på om man skrollar
+        window.addEventListener("scroll", function(e) {
+
+            // Hur mycket skrollar man?
+            console.log(window.pageYOffset);
+
+            // Flytta alla element: en efter en i en loop
+            eTargets.forEach(function(element) {
+                // Läs av data-rate för elementen
+                var rate = element.dataset.rate;
+                var orientation = element.dataset.orientation;
+
+                if (orientation == "v") {
+                    // Räkna ut en förflyttning
+                    var distance = window.pageYOffset * rate;
+
+                    // Flytta på elementen
+                    element.style.transform = "translateY(" + distance + "px)";
+                } else {
+                    // Räkna ut en förflyttning
+                    var distance = window.pageYOffset * rate;
+
+                    // Flytta på elementen
+                    element.style.transform = "translate3d(" + distance + "px, " + window.pageYOffset + "px, 0px)";
+                }
+
+
+            });
+        });
+    </script>
+</body>
+</html>
