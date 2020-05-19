@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baskervville&display=swap')
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidans Utseende */
+
+body {
+    /* background: url(../bilder/bild.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1080;
+}
+.kontainer {
+    
+}
+.test{
+    background: url(../bilder/bild1.jpg);
+    filter: blur(2px);
+}
+    /* Utessende för sidhuvud */
+
+.kontainer .sidhuvud {
+    background-color: #101010;
+    width: 100%;
+    height: 100px;
+    display: block;
+    
+}
+.kontainer .innre-sidhuvud {
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.logo {
+    height: 100%;
+    display: table;
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+}
+.logo h1 {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 35px;
+    font-weight: 200;
+}
+.navigation {
+    float: right;
+    height: 100%;
+    color: white;
+}
+.navigation a:hover {
+    transform: scale(1.1);
+}
+.navigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px 400px 400px 400px ;
+    padding: 200px;
+    column-gap: 65px;
+    background-color: white;
+    margin: 0 auto;
+    
+}
+.gallery img {
+    transition: 1s;
+    width: 100%;
+    background-color: black;
+    padding: 5px;
+    
+}
+.gallery img:hover {
+    transform: scale(1.25);
+    
+}
+.gallery-h1 {
+    text-align: center;
+    color: white;
+    font-size: 120px;
+    padding: 200px;
+    margin-top: -30%;
+
+}
+.gallery-header{
+width: 100%;
+
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px){
+    .navigations  {
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .navigation {
+        position: absolute;
+        right: 0px;
+    }
+}
