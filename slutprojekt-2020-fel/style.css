@@ -19,18 +19,17 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.kontainer {
-}
+.kontainer {}
 .main {
     /* background: url(./bilder/bild1-size.jpg); */
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
     width: 100%;
     height: 1080px;
     background-position: 0 50px;
 
 }
 
-    /* Utessende för sidhuvud */
+/* Utessende för sidhuvud */
 
 .kontainer .sidhuvud {
     background-color: #101010;
@@ -91,19 +90,19 @@ body {
     background: black;
     width: 100%;
     height: 650px;
-    
+
 }
 .info .bilder {
     display: grid;
-    grid-template-columns: 3fr 3fr 3fr; 
+    grid-template-columns: 3fr 3fr 3fr;
     column-gap: 15px;
     margin-left: 50px;
-    
+
 }
 .info img {
     width: 560px;
     border: solid white 5px;
-    
+
 }
 
 /* Textens Utseende */
@@ -116,7 +115,7 @@ body {
     font-family: 'Baskervville', serif;
     text-shadow: 5px 5px 5px black;
     transform: translate(0%, -150%);
-    
+
 }
 .logo {
     height: 100%;
