@@ -87,10 +87,7 @@ body {
     padding: 200px;
     column-gap: 65px;
     background-color: white;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 100px;
-    border: solid 3px black;
+    margin: 0 auto;
     
 }
 .gallery img {
@@ -107,8 +104,14 @@ body {
 .gallery-h1 {
     text-align: center;
     color: black;
-    font-size: 50px;
-    margin-top: 50px;
+    font-size: 120px;
+    padding: 200px;
+    margin-top: -30%;
+
+}
+.gallery-header{
+width: 1903px;
+
 
 }
 
