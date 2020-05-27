@@ -1,4 +1,4 @@
-    var i = 0; // Start punkt
+    var i = 0; // Start point
 	var images = [];
     var time = 5000;
 
@@ -9,7 +9,7 @@
 	images[3] = './bilder/bild1.jpg';
 
 	// Byter bilden
-	function changeImg(){
+	function changeImages(){
 		document.test.src = images[i];
 
 		if(i < images.length - 1){
@@ -18,8 +18,8 @@
 			i = 0;
 		}
 
-		setTimeout("changeImg()", time);
+		setTimeout("changeImages()", time);
 	}
 
-	window.onload = changeImg;
+	window.onload = changeImages; 
 

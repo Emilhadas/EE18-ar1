@@ -35,6 +35,7 @@ body {
     width: 100%;
     height: 100px;
     display: block;
+    position: fixed;
     
 }
 .kontainer .innre-sidhuvud {
@@ -95,7 +96,6 @@ body {
     width: 100%;
     background-color: black;
     padding: 5px;
-    
 }
 .gallery img:hover {
     transform: scale(1.25);

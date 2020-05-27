@@ -27,7 +27,6 @@ body {
     width: 100%;
     height: 1080px;
     background-position: 0 50px;
-
 }
 
     /* Utessende för sidhuvud */
@@ -93,18 +92,20 @@ body {
     height: 650px;
     
 }
-.info .bilder {
+/*.info .bilder {
     display: grid;
     grid-template-columns: 3fr 3fr 3fr; 
     column-gap: 15px;
     margin-left: 50px;
     
-}
-.info img {
-    width: 560px;
+}*/
+
+/*.info img {
+    width: 160px;
     border: solid white 5px;
     
 }
+*/
 
 /* Textens Utseende */
 
@@ -128,7 +129,14 @@ body {
 
 
 
-
+.changeimages {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+@keyframes fade {
+    from {opacity: 0.0;}
+    to { opacity: 1.0;}
+}
 
 
 
