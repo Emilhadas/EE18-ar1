@@ -126,6 +126,41 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Footer for the sides */
+.footer {
+    background-color: black;
+    height: 350px;
+    color: white;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+    opacity: 185%;
+}
+.footer h1 span {
+    font-weight: 800;
+}
+.explore {
+    color: white;
+    display: grid;
+    grid-template-columns: 3fr;
+}
+.follow {
+    display: grid;
+    grid-template-columns: 3fr;
+}
+.rights {
+
+}
+a {
+    text-decoration: none;
+    color: white;
+    width: 20px;
+}
+p {
+    color: grey;
+}
+
 
 
 

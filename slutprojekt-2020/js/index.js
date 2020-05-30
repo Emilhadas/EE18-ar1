@@ -2,13 +2,13 @@
 	var images = [];
     var time = 5000;
 
-	// Image List
+	// List of the images
 	images[0] = './bilder/bild1.jpg';
 	images[1] = './bilder/bild4.jpg';
 	images[2] = './bilder/bild5.jpg';
 	images[3] = './bilder/bild1.jpg';
 
-	// Byter bilden
+	// Changes the images
 	function changeImages(){
 		document.test.src = images[i];
 
