@@ -1,16 +1,16 @@
-    var i = 0; // Start point
+    var i = 0; // Starting point
 	var images = [];
     var time = 5000;
 
-	// List of the images
+	// List of the images we use
 	images[0] = './bilder/bild1.jpg';
 	images[1] = './bilder/bild4.jpg';
 	images[2] = './bilder/bild5.jpg';
 	images[3] = './bilder/bild1.jpg';
 
-	// Changes the images
+	// The function that makes the images loop
 	function changeImages(){
-		document.test.src = images[i];
+		document.drone.src = images[i];
 
 		if(i < images.length - 1){
 			i++;

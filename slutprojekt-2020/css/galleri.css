@@ -22,7 +22,6 @@ body {
     height: 1080;
 }
 .kontainer {
-    
 }
 .test{
     background: url(../bilder/bild1.jpg);
@@ -81,10 +80,22 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
 }
+
+
+
+/* Gallery */
+
+.mainpic img {
+    width: 60%;
+    margin: 90px 0px 0px 360px;
+    border: solid 10px white;
+    box-shadow: black 0px 0px 20px 5px;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 400px 400px 400px 400px 400px ;
+    grid-template-rows: 300px 300px ;
     padding: 200px;
     column-gap: 65px;
     background-color: white;
@@ -94,11 +105,12 @@ body {
 .gallery img {
     transition: 1s;
     width: 100%;
-    background-color: black;
+    background-color: white;
     padding: 5px;
+    box-shadow: black 0px 0px 10px 5px;
 }
 .gallery img:hover {
-    transform: scale(1.25);
+    transform: scale(1.02);
     
 }
 .gallery-h1 {
@@ -110,7 +122,7 @@ body {
 
 }
 .gallery-header{
-width: 100%;
+    width: 100%;
 }
 
 /* Footer for the sides */
@@ -146,9 +158,6 @@ a {
 p {
     color: grey;
 }
-
-
-
 
 
 
